@@ -1,0 +1,13 @@
+string name          # joint name, e.g. "joint_1"
+string type          # "revolute" | "prismatic" | "fixed" | "continuous" | "floating"
+string parent_link
+string child_link
+float64[3] xyz       # origin translation
+float64[3] rpy       # origin rotation
+
+# Only meaningful for revolute/prismatic/continuous:
+trif_sim_msgs/JointAxis  axis
+trif_sim_msgs/JointLimit limit
+---
+bool   success
+string message

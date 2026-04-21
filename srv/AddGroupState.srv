@@ -1,0 +1,7 @@
+string group_name        # must match a planning group name
+string state_name        # e.g. "all-zeros", "home"
+string[] joint_names
+float64[] joint_values   # same length as joint_names
+---
+bool   success
+string message

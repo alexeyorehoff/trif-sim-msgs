@@ -1,0 +1,11 @@
+string name              # group name, e.g. "manipulator"
+
+# Chain definition (use these OR joints list, not both)
+string chain_base_link   # e.g. "base_link"
+string chain_tip_link    # e.g. "tool0"
+
+# Alternatively: explicit joint list
+string[] joints          # joint names to include
+---
+bool   success
+string message

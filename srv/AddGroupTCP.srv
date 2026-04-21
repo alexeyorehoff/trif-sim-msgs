@@ -1,0 +1,11 @@
+string group_name
+string name
+float64[3] xyz
+float64[3] rpy
+float64[4] wxyz
+bool use_quaternion
+
+---
+
+bool   success
+string message

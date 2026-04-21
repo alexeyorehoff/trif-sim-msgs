@@ -1,0 +1,7 @@
+string name              # e.g. "FixedBase"
+string type              # "fixed" | "floating" | "planar"
+string parent_frame      # external frame, e.g. "world"
+string child_link        # robot root link, e.g. "base_link"
+---
+bool   success
+string message

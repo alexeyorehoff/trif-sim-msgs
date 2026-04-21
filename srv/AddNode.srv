@@ -1,0 +1,12 @@
+string   name
+string   node_type        # "world_plane" | "static_obstacle" | "robot_joint"
+string   stl_path
+string   parent_id        # empty string = attach to world root
+float64[3] translation
+float64[3] rotation_rpy
+
+---
+
+bool     success
+string   node_id
+string   message

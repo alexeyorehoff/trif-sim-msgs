@@ -1,0 +1,6 @@
+string link1
+string link2
+string reason            # "Adjacent" | "Never" | "Default" | "User"
+---
+bool   success
+string message

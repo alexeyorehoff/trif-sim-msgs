@@ -1,0 +1,5 @@
+string            name          # unique link name, e.g. "base_link", "link_1"
+trif_sim_msgs/LinkMesh mesh     # visual + collision meshes
+---
+bool   success
+string message

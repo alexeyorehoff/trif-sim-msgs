@@ -1,0 +1,29 @@
+# GenerateTesseract.srv
+# Request fields
+string robot_name
+string package_name          # leave empty to use node param
+string pkg_root              # leave empty to use node param / ament_index
+
+# Optional per-group kinematics (parallel arrays, one entry per group)
+string[]  kin_group_names
+string[]  kin_base_links
+string[]  kin_tip_links
+
+# OPW parameters – flat, packed 6-per-group.
+# Leave all empty to fall back to KDL-only config.
+float64[] opw_a1
+float64[] opw_a2
+float64[] opw_b
+float64[] opw_c1
+float64[] opw_c2
+float64[] opw_c3
+float64[] opw_c4
+float64[] opw_offsets           # 6 values per group, packed
+float64[] opw_sign_corrections  # 6 values per group, packed
+
+---
+
+# Response fields
+bool     success
+string   message
+string[] output_files
