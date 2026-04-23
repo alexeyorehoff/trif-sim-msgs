@@ -1,0 +1,4 @@
+# Remove all queued toolpaths (reset planner state)
+---
+bool   success
+string message

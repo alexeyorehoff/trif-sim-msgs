@@ -1,0 +1,7 @@
+# Ask the planner to (re-)fetch the Tesseract env from trif_env_mgr
+string robot_name
+string package_name
+string pkg_root
+---
+bool   success
+string message

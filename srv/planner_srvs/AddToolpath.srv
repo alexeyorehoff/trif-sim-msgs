@@ -1,0 +1,6 @@
+# Add one toolpath segment to the pending plan queue
+Toolpath toolpath
+---
+bool   success
+string message
+uint32 toolpath_id   # opaque handle for later removal / inspection
