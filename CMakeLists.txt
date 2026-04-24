@@ -19,8 +19,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/env_mgr_srvs/AddGroupState.srv"
   "srv/env_mgr_srvs/AddVirtualJoint.srv"
   "srv/env_mgr_srvs/DisableCollision.srv"
-  "srv/env_mgr_srvs/GenerateDescription.srv"
-  "srv/env_mgr_srvs/GenerateTesseract.srv"
+  "srv/env_mgr_srvs/SetKinematicChain.srv"
+  "srv/env_mgr_srvs/GenerateEnvironment.srv"
 
   "msg/planner_msgs/PlannedPoint.msg"
   "msg/planner_msgs/PlannedToolpath.msg"

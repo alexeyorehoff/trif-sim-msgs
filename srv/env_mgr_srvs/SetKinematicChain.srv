@@ -1,0 +1,34 @@
+# SetKinematicChain.srv
+# ---------------------
+# Register or replace a KinematicChain for one planning group.
+# The planning group must already exist (call add_planning_group first).
+# Plugin configs are passed as JSON strings so the interface stays flat.
+
+string  group_name
+string  base_link
+string  tip_link
+
+# Extra filesystem paths written to search_paths: in the YAML.
+string[] search_paths
+
+# ── Forward kinematics plugins (parallel arrays, one element per plugin) ──
+# fwd_factory[i]       factory class name  e.g. "KDLFwdKinChainFactory"
+# fwd_config_json[i]   JSON object with extra config fields
+#                      (base_link / tip_link are auto-injected if absent)
+# fwd_is_default[i]    which entry becomes default: (exactly one true)
+# fwd_libraries_csv[i] comma-separated shared-library names required
+string[] fwd_factory
+string[] fwd_config_json
+bool[]   fwd_is_default
+string[] fwd_libraries_csv
+
+# ── Inverse kinematics plugins ────────────────────────────────────────────
+string[] inv_factory
+string[] inv_config_json
+bool[]   inv_is_default
+string[] inv_libraries_csv
+
+---
+
+bool   success
+string message

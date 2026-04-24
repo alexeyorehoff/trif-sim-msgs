@@ -1,0 +1,19 @@
+# GenerateEnvironment.srv
+# -----------------------
+# Trigger generation of planner-specific config files for one robot.
+# Kinematics are read from the SceneTree's kinematic_chains registry.
+# Call set_kinematic_chain for each group before invoking this service.
+
+string   robot_name
+
+# Additional lib search paths for the contact manager plugin YAML.
+string[] extra_contact_search_paths
+
+# Target backend: "tesseract" (default) | "moveit" (future)
+string   backend
+
+---
+
+bool     success
+string   message
+string[] output_files

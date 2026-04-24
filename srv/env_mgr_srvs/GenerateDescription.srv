@@ -1,9 +1,0 @@
-string format            # "urdf_srdf" or "sdf"
-string output_dir
-string robot_name
-
----
-
-bool     success
-string   message
-string[] output_files
