@@ -1,6 +1,6 @@
 # Trigger planning on all queued toolpaths.
 # Returns the full planned result including FK, IK, collision, manipulability.
-string robot_name      # forwarded to trif_env_mgr if env needs (re-)loading
+string planning_group  # optional: load/switch to this group before planning
 bool   clear_after     # if true, clear the queue after successful planning
 ---
 PlannedToolpath result

@@ -1,7 +1,6 @@
-# Ask the planner to (re-)fetch the Tesseract env from trif_env_mgr
-string robot_name
-string package_name
-string pkg_root
+# Select the kinematic group that the planner backend should use.
+# The environment itself is generated from the current trif_env_mgr SceneTree.
+string planning_group
 ---
 bool   success
 string message
